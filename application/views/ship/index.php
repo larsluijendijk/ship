@@ -5,6 +5,6 @@
 	<title>Ship</title>
 </head>
 <body>
-<p>This is the ship/index page.</p>
+<p>This is the index page.</p>
 </body>
 </html>

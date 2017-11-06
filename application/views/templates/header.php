@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Ship</title>
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!-- jQuery library -->
@@ -27,7 +28,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a class="navbar-hover" href="<?php echo site_url('ship/view')?>">Ships</a></li>
+        <li><a class="navbar-hover" href="<?php echo site_url('ship/')?>">Ships</a></li>
       </ul>
       </div>
       </div>

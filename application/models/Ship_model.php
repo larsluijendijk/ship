@@ -5,6 +5,11 @@ class Ship_model extends CI_Model {
         $this->load->database();
     }
 
+	public function get_ships(){
+        $query = $this->db->get('ships');
+        return $query->result_array();
+    }
+
 
 
 }

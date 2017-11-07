@@ -8,6 +8,7 @@ class Ship extends CI_Controller {
         $this->load->helper('form');
         $this->load->library('session');
         $this->load->library('form_validation');
+        $this->load->library('table');
         $this->load->database();
    }
 
@@ -67,6 +68,13 @@ class Ship extends CI_Controller {
     }
 
     public function view(){
+        $query = $this->db->query('SELECT * FROM containers');
+        
+        $data['table'] = $this->table->generate($query);
+
+        $this->load->view('templates/header');
+        $this->load->view('ship/view', $data);
+        $this->load->view('templates/footer');
 
     }
 

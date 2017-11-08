@@ -5,6 +5,10 @@ class Ship_model extends CI_Model {
         $this->load->database();
     }
 
+    public function get_containers_with_ship_id($id){
+
+    }
+
 	public function get_ships(){
         $query = $this->db->get('ships');
         return $query->result_array();
@@ -14,7 +18,8 @@ class Ship_model extends CI_Model {
         $data = array(
             'name' => $_POST['name'],
             'levels' => $_POST['levels'],
-            'space' =>$_POST['space'],
+            'x_amount_space' =>$_POST['x_amount_space'],
+            'y_amount_space' =>$_POST['y_amount_space'],
             'max_weight' => $_POST['max_weight'],
             'route_id' => $_POST['route_id']
         );
@@ -40,7 +45,8 @@ class Ship_model extends CI_Model {
         $data = array(
             'name' => $this->input->post('name'),
             'levels' => $this->input->post('levels'),
-            'space' => $this->input->post('space'),
+            'x_amount_space' => $this->input->post('x_amount_space'),
+            'y_amount_space' => $this->input->post('y_amount_space'),
             'max_weight' => $this->input->post('max_weight'),
             'route_id' => $this->input->post('route_id')
         );

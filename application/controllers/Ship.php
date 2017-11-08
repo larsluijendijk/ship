@@ -22,7 +22,8 @@ class Ship extends CI_Controller {
     public function create(){
         $this->form_validation->set_rules('name', 'name', 'required');
         $this->form_validation->set_rules('levels', 'levels', 'required');
-        $this->form_validation->set_rules('space', 'space', 'required');
+        $this->form_validation->set_rules('x_amount_space', 'x_amount_space', 'required');
+        $this->form_validation->set_rules('y_amount_space', 'y_amount_space', 'required');
         $this->form_validation->set_rules('max_weight', 'max_weight', 'required');
         $this->form_validation->set_rules('route_id', 'route_id', 'required');
 
@@ -53,7 +54,8 @@ class Ship extends CI_Controller {
         
         $this->form_validation->set_rules('name', 'name', 'required');
         $this->form_validation->set_rules('levels', 'levels', 'required');
-        $this->form_validation->set_rules('space', 'space', 'required');
+        $this->form_validation->set_rules('x_amount_space', 'x_amount_space', 'required');
+        $this->form_validation->set_rules('y_amount_space', 'y_amount_space', 'required');
         $this->form_validation->set_rules('max_weight', 'max_weight', 'required');
         $this->form_validation->set_rules('route_id', 'route_id', 'required');
  
@@ -68,9 +70,7 @@ class Ship extends CI_Controller {
     }
 
     public function view(){
-        $query = $this->db->query('SELECT * FROM containers');
-        
-        $data['table'] = $this->table->generate($query);
+        $data['containers'] = 1;
 
         $this->load->view('templates/header');
         $this->load->view('ship/view', $data);

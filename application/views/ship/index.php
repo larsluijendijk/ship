@@ -9,7 +9,8 @@
     <tr>
         <td class="bold" style="font-weight: bold;">Name</td>
         <td class="bold" style="font-weight: bold;">Levels</td>
-        <td class="bold" style="font-weight: bold;">Space</td>
+        <td class="bold" style="font-weight: bold;">X amount</td>
+        <td class="bold" style="font-weight: bold;">Y amount</td>
         <td class="bold" style="font-weight: bold;">Max weight</td>
         <td class="bold" style="font-weight: bold;">Route id</td>
         <td class="bold" style="font-weight: bold;">Edit</td>
@@ -19,7 +20,8 @@
 	<tr>
 		<td><?php echo $ship['name']; ?></td>
 		<td><?php echo $ship['levels']; ?></td>
-		<td><?php echo $ship['space']; ?></td>
+        <td><?php echo $ship['x_amount_space']; ?></td>
+		<td><?php echo $ship['y_amount_space']; ?></td>
         <td><?php echo $ship['max_weight']; ?></td>
         <td><?php echo $ship['route_id']; ?></td>
         <td><a href="<?php echo site_url('ship/edit/'.$ship['id']); ?>"><span class="glyphicon glyphicon-pencil"></span></a></td>

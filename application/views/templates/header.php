@@ -29,6 +29,9 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a class="navbar-hover" href="<?php echo site_url('ship/')?>">Ships</a></li>
+      </ul>      
+      <ul class="nav navbar-nav">
+        <li><a class="navbar-hover" href="<?php echo site_url('container/')?>">Containers</a></li>
       </ul>
       </div>
       </div>

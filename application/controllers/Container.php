@@ -20,6 +20,9 @@ class Container extends CI_Controller {
    }
    public function create(){
         $this->form_validation->set_rules('name', 'name', 'required');
+        $this->form_validation->set_rules('type', 'type', 'required');
+        $this->form_validation->set_rules('weight', 'weight', 'required');
+        $this->form_validation->set_rules('ship_id', 'ship_id', 'required');
 
         if ($this->form_validation->run() === FALSE) {
             $data['ships'] = $this->Container_model->get_ships();
@@ -28,10 +31,10 @@ class Container extends CI_Controller {
             $this->load->view('templates/footer');
         } else {
             $this->load->model('Container_model');
-            $this->Ship_model->create();
+            $this->Container_model->create();
 
             $this->session->set_flashdata('succeed', '<div class="alert alert-success text-center">Containers has been added.</div>');
-            redirect("ship/create", "refresh");
+            redirect("container/", "refresh");
         }
     }
 

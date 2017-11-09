@@ -10,4 +10,13 @@ class Container_model extends CI_Model {
         return $query->result_array();
     }
 
+    public function create(){
+        $data = array(
+            'name' => $_POST['name'],
+            'type' => $_POST['type'],
+            'weight' =>$_POST['weight'],
+            'ship_id' =>$_POST['ship_id']
+        );
+        $this->db->insert('containers', $data);
+    }
 }

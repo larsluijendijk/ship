@@ -24,10 +24,10 @@
                             <label for="type" class="control-label">Type</label>
                             <br/>
                         <select class="selectpicker" id="type" name="type">
-                          <option>Normal</option>
-                          <option>Heavy</option>
-                          <option>Dangerous</option>
-                          <option>Open</option>
+                          <option value="normal">Normal</option>
+                          <option value="heavy">Heavy</option>
+                          <option value="dangerous">Dangerous</option>
+                          <option value="open">Open</option>
                         </select>
                         <span class="text-danger"><?php echo form_error('type'); ?></span>
                         </div>
@@ -47,11 +47,11 @@
                         <div class="col-xs-12 .col-md-8">
                             <label for="type" class="control-label">Ship</label>
                             <br/>
-                        <select class="selectpicker" id="ship" name="ship">
+                        <select class="selectpicker" id="ship_id" name="ship_id">
                                 
-                                <?php foreach ($ships as $ship):
-                                    echo '<option>' . $ship['name'] . '</option> ';
-                                endforeach;?>
+                                <?php foreach ($ships as $ship) { ?>
+                                <option value="<?= $ship['id']; ?>"><?= $ship['name']; ?></option>
+                                <?php } ?>
 
                         <span class="text-danger"><?php echo form_error('type'); ?></span>
                         </div>

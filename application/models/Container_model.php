@@ -19,4 +19,16 @@ class Container_model extends CI_Model {
         );
         $this->db->insert('containers', $data);
     }
+
+    public function get_container_by_ship_id($id){
+    	$this->db->where('ship_id', $id);
+        $query = $this->db->get('containers');
+        return $query->result_array();
+    }
+
+    public function get_ship_by_id($id){
+       	$this->db->where('id', $id);
+        $query = $this->db->get('ships');
+        return $query->result_array();
+    }
 }

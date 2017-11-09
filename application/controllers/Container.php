@@ -37,7 +37,18 @@ class Container extends CI_Controller {
             redirect("container/", "refresh");
         }
     }
-
-
+    public function view(){
+        $id = $this->uri->segment(3);
+        
+        if (empty($id)){
+            show_404();
+        }
+              
+        $data['containers'] = $this->Container_model->get_container_by_ship_id($id);
+        $data['ship'] = $this->Container_model->get_ship_by_id($id);
+            $this->load->view('templates/header');
+            $this->load->view('container/view', $data);
+            $this->load->view('templates/footer');
+    }
 
 }

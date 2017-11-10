@@ -54,11 +54,9 @@ var_dump($test);
         <td><a href="<?php echo site_url('ship/delete/'.$container['id']); ?>" onClick="return confirm('Are you sure you want to delete?')"><span class="glyphicon glyphicon-trash"></span></a></td>
 	</tr>
         <?php endforeach; ?>
+
+
         </table>
 </section>
+<h2>Total weight is <?= $totalweight?></h2>
 </div>
-<script type="text/javascript">
-function showDiv() {
-   document.getElementById('welcomeDiv').style.display = "block";
-}
-</script>

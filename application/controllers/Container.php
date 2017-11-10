@@ -48,6 +48,7 @@ class Container extends CI_Controller {
         }
         $data['test'] = 1;
         $data['containers'] = $this->Container_model->get_container_by_ship_id($id);
+        $data['totalweight'] = array_sum(array_column($data['containers'], 'weight'));
         $result = $this->Container_model->get_ship_by_id($id);
         if($result){
             $data['name'] = $result->name;

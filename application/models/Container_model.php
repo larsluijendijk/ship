@@ -29,6 +29,11 @@ class Container_model extends CI_Model {
     public function get_ship_by_id($id){
        	$this->db->where('id', $id);
         $query = $this->db->get('ships');
-        return $query->result_array();
+        return $query->row();
+    }
+
+    public function get_amount(){
+		$amount = $_POST['amount'];
+        return $amount; 
     }
 }

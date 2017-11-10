@@ -32,8 +32,8 @@
                 <div class="form-group">
                     <div class="row colbox">
                         <div class="col-xs-12 .col-md-8">
-                            <label for="x_amount_space" class="control-label">X Amount</label>
-                            <input class="form-control" id="x_amount_space" name="x_amount_space" placeholder="X Amount" type="text" value="<?php echo set_value('x_amount_space'); ?>" /> 
+                            <label for="x_amount_space" class="control-label">Length</label>
+                            <input class="form-control" id="x_amount_space" name="x_amount_space" placeholder="Length" type="text" value="<?php echo set_value('x_amount_space'); ?>" /> 
                             <span class="text-danger"><?php echo form_error('x_amount_space'); ?></span>
                         </div>
                     </div>
@@ -42,8 +42,8 @@
                 <div class="form-group">
                     <div class="row colbox">
                         <div class="col-xs-12 .col-md-8">
-                            <label for="y_amount_space" class="control-label">Y Amount</label>
-                            <input class="form-control" id="y_amount_space" name="y_amount_space" placeholder="Y Amount" type="text" value="<?php echo set_value('y_amount_space'); ?>" /> 
+                            <label for="y_amount_space" class="control-label">Width</label>
+                            <input class="form-control" id="y_amount_space" name="y_amount_space" placeholder="Width" type="text" value="<?php echo set_value('y_amount_space'); ?>" /> 
                             <span class="text-danger"><?php echo form_error('y_amount_space'); ?></span>
                         </div>
                     </div>

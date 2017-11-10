@@ -15,10 +15,10 @@
             <td><input type="input" name="levels" size="4" value="<?php echo $ship['levels'] ?>" /></td>
         </tr>
                 <tr>
-            <td><label for="text">X Amount</label></td>
+            <td><label for="text">Length</label></td>
             <td><input type="input" name="x_amount_space" size="4" value="<?php echo $ship['x_amount_space'] ?>" /></td>
         </tr>                <tr>
-            <td><label for="text">Y Amount</label></td>
+            <td><label for="text">Width</label></td>
             <td><input type="input" name="y_amount_space" size="4" value="<?php echo $ship['y_amount_space'] ?>" /></td>
         </tr>
                 <tr>

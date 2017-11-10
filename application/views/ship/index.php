@@ -9,8 +9,8 @@
     <tr>
         <td class="bold" style="font-weight: bold;">Name</td>
         <td class="bold" style="font-weight: bold;">Levels</td>
-        <td class="bold" style="font-weight: bold;">X amount</td>
-        <td class="bold" style="font-weight: bold;">Y amount</td>
+        <td class="bold" style="font-weight: bold;">Length</td>
+        <td class="bold" style="font-weight: bold;">Width</td>
         <td class="bold" style="font-weight: bold;">Max weight</td>
         <td class="bold" style="font-weight: bold;">Route id</td>
         <td class="bold" style="font-weight: bold;">Edit</td>

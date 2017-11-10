@@ -69,15 +69,6 @@ class Ship extends CI_Controller {
         }
     }
 
-    public function view(){
-        $data['containers'] = 1;
-
-        $this->load->view('templates/header');
-        $this->load->view('ship/view', $data);
-        $this->load->view('templates/footer');
-
-    }
-
     public function delete(){
         $id = $this->uri->segment(3);
         $ship = $this->Ship_model->get_ship_by_id($id);

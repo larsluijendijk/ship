@@ -1,10 +1,40 @@
-<div class="container">
+<style>
+table {
+    border-collapse: separate;
+    empty-cells: show;
 
+}
+td{
+        width: 10pt;
+        height: 10pt;
+}
+</style>
+
+<div class="container">
     <h1 class="title">Containers from ship 
-            <?php foreach ($ship as $shipname): ?>
-            <?= $shipname['name'] ?>
-            <?php endforeach; ?>
+            <?= $name?>
     </h1>
+<?php
+echo "<table border='1'><br />";
+
+for ($row = 0; $row < $x; $row ++) {
+   echo "<tr>";
+
+   for ($col = 1; $col <= $y; $col ++) {
+        echo '<td></td>';
+        /*, ($col + ($row * $y)), */
+        // x is length, y is width.
+        // y has to be the same as y and is y_amount_space
+   }
+
+   echo "</tr>";
+}
+
+echo "</table>";
+var_dump($test); 
+?>
+
+
 
     <br />
 
@@ -27,4 +57,8 @@
         </table>
 </section>
 </div>
-
+<script type="text/javascript">
+function showDiv() {
+   document.getElementById('welcomeDiv').style.display = "block";
+}
+</script>

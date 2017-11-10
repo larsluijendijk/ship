@@ -57,10 +57,18 @@
                         </div>
                     </div>
                 </div>          
+                <div class="form-group">
+                    <div class="row colbox">
+                        <div class="col-xs-12 .col-md-8">
+                            <label for="amount" class="control-label">Amount</label>
+                            <input class="form-control" id="amount" name="amount" placeholder="Amount" type="text" value="<?php echo set_value('amount'); ?>" /> 
+                            <span class="text-danger"><?php echo form_error('amount'); ?></span>
+                        </div>
+                    </div>
+                </div>
 
 
-
-                <div class="form-gruop">
+                <div class="form-group">
                     <div class="row colbox">
                         <div class="col-xs-12 .col-md-8">
                         <br/>
